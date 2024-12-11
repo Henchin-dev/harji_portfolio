@@ -1,0 +1,359 @@
+.top_header {
+  gap: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 40px; /* Increase padding to prevent overflow */
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.contact_cont{
+  display: flex; align-items: center; gap: 20px;
+}
+
+.main_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+  display: flex;
+        align-items: flex-start;
+        align-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+}
+
+
+  .link_image_cont {
+    gap: 50px;
+    float: left;
+    display: flex;
+    justify-content: space-around; /* or space-between, center, etc. */
+    align-items: center;
+  }
+
+  body {
+    background-color: #bc1823;
+    margin-top: 60px;
+    background-image: url('img/Rectangle.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: right  ;
+    background-attachment: fixed;
+  }
+
+/*
+  body {
+    background-color: #2e2c2b;
+    margin-top: 60px;
+    background-image: url('img/Vector 1.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+  }*/
+
+  .transparent-input {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    margin: 10px;
+}
+
+.transparent-input::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Adjust placeholder color for better visibility */
+}
+
+.transparent-input:focus {
+    border-color: lightblue; /* Optional: Change border color on focus */
+}
+
+
+  .info_container {
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    gap: 20px; /* Space between the containers */
+  }
+  .info_container_2 {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    gap: 20px; /* Space between the containers */
+  }
+
+  .book_now_container {
+    height: 50px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly; /* Push items to the sides */
+    align-items: center;
+    background: #ffaa00;
+    border-radius: 100px; 
+    padding: 5px;
+    gap: 20px;
+  }
+
+  .info_box_2 {
+    margin-right: 0px;
+    height: fit-content;
+    background: #f8f5f4; 
+    border-radius: 20px; 
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+  .info_box {
+    margin-right: 150px;
+    height: fit-content;
+    background: #f8f5f4; 
+    border-radius: 20px; 
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+  .price_cont{
+    justify-content: space-evenly;
+    display: flex;
+  }
+
+
+  .book_img{
+    margin-top: 5px;
+    width: 40px;
+  }
+  .fb_logo {
+    width: 40px;
+    padding-left: 100px;
+  }
+  .fb_logo_black {
+    width: 50px;
+  }
+  .insta_logo {
+    width: 50px;
+    
+  }
+  .insta_logo_black {
+    width: 60px;
+    padding-right: 10px;
+  }
+  .tiktok_logo {
+    width: 50px;
+  }
+  .Rage_Logo {
+    width: 300px;
+    padding-left: 40px;
+  }
+
+  .header_a{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 40px;
+    text-decoration: none;
+  }
+
+  .header_a_a{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 40px;
+    text-decoration: none;
+  }
+ 
+  h2{
+    font-family: 'Poppins';
+  }
+  p{
+    font-family: 'Poppins';
+  }
+
+
+.Smash_Price_title{
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #cc331e;
+  font-family: 'Poppins';
+}
+  .Smash_text{
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+    color: #cc331e;
+    font-family: 'Poppins';
+  }
+
+.Smash_info{
+  font-size: 25px; width: 420px;
+}
+
+  .Address_text{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+  }
+  .Rage_Text {
+    padding-left: 45px;
+    color: white;
+    font-size: 70px;
+    font-family: 'Poppins';
+    text-shadow: -15px 15px 10px rgba(0, 0, 0, 0.5); /* Shadow to the bottom-left */
+  }
+
+  .img {
+    transition: transform 0.3s ease-in-out; /* Smooth animation for scaling */
+    width: 30dvb; /* Keep the same width initially */
+}
+
+.img:hover {
+    transform: scale(1.1); /* Scales the image to 110% of its original size */
+}
+
+
+@media only screen and (max-width: 768px) {
+  body {
+      font-size: 14px;
+      margin: 10px;
+  }
+
+  .img {
+      width: 90vw; /* Make the image larger on small screens */
+  }
+
+  .main_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    flex-direction: column;
+  }
+
+  body {
+    background-color: #bc1823;
+    margin-top: 60px;
+    background-image: url('img/Rectangle.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: right  ;
+    background-attachment: fixed;
+  }
+  .header_a{
+    padding: 10px;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .header_a_a{
+    padding: 20px;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .top_header {
+    padding: 0px;
+    gap: 13px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+    background-color: #cc331e;/* Ensures padding is included in width */
+  }
+
+  .Rage_Text {
+    padding-left: 0px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Poppins';
+    text-shadow: -15px 15px 10px rgba(0, 0, 0, 0.5); /* Shadow to the bottom-left */
+  }
+
+  .Smash_Price_title{
+    margin: 0px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #cc331e;
+    font-family: 'Poppins';
+  }
+    .Smash_text{
+      margin: 0px;
+      padding: 0px;
+      font-size: 20px;
+      color: #cc331e;
+      font-family: 'Poppins';
+    }
+    .Smash_info{
+      font-size: 10px; width: 420px;
+    }
+    .Address_text{
+      font-size: 15px;
+      text-align: center;
+      color: white;
+    }
+
+    .info_box{
+      margin-top: 20px;
+    }
+
+    .Rage_Logo {
+      width: 300px;
+      padding-left: 0px;
+    }
+    .fb_logo {
+      width: 40px;
+      padding-left: 75px;
+  }
+
+  .img {
+    width: 14dvb;
+}
+
+  .info_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .contact_cont{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .info_box {
+    margin-right: 0px;
+    height: fit-content;
+    background: #f8f5f4; 
+    border-radius: 20px; 
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+  
+
+}
+
