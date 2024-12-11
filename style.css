@@ -219,11 +219,18 @@
 }
 
 .img:hover {
-    transform: scale(1.1); /* Scales the image to 110% of its original size */
+  transform: scale(2.0); /* Scales the image */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Adds a drop shadow */
 }
 
 
 @media only screen and (max-width: 768px) {
+
+  .img:hover {
+  transform: scale(1.8); /* Scales the image */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Adds a drop shadow */
+}
+
   body {
       font-size: 14px;
       margin: 10px;
